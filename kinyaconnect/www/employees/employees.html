@@ -1,0 +1,23 @@
+{% extends "templates/web.html" %}
+
+{% block title %}Employee List{% endblock %}
+
+{% block content %}
+    <h2 class="page-title">Our Employees</h2>
+
+    <div class="employee-cards">
+        {% for employee in employees %}
+            <div class="employee-card">
+                <div class="employee-image">
+                    <img src="{{ employee.attach_image }}" 
+                         alt="Profile Picture" 
+                         class="profile-pic">
+                </div>
+                <div class="employee-info">
+                    <strong class="employee-name">{{ employee.full_name }}</strong>
+                    <p class="employee-role">{{ employee.role }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

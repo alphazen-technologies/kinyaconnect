@@ -1,0 +1,58 @@
+/* Page Title */
+.page-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Employee Cards Container */
+.employee-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Individual Employee Card */
+.employee-card {
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+/* Hover effect on card */
+.employee-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Profile Picture */
+.employee-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.employee-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Employee Info */
+.employee-info {
+    padding: 15px;
+}
+
+.employee-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.employee-role {
+    font-size: 14px;
+    color: #777;
+}
